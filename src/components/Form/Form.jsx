@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
   Container,
-  Typography,
   TextField,
   Grid,
   Button,
@@ -36,7 +35,6 @@ function Form({data , isEdit , editIndex ,onClose , toggleRefresh}) {
   const [authToken , setAuthToken] = useState('')
   const [states , setStates] = useState([])
   const [loading , setLoading] = useState(true)
-  const [edit , setEdit] = useState(isEdit || false)
 
   const [firstNameError , setFirstNameError] = useState('')
   const [lastNameError , setLastNameError] = useState('')

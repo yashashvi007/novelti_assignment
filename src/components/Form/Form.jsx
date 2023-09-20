@@ -34,7 +34,7 @@ function Form({data , isEdit , editIndex ,onClose , toggleRefresh}) {
   const [countries , setCountries] = useState([])
   const [authToken , setAuthToken] = useState('')
   const [states , setStates] = useState([])
-  const [loading , setLoading] = useState(true)
+  
 
   const [firstNameError , setFirstNameError] = useState('')
   const [lastNameError , setLastNameError] = useState('')
@@ -181,7 +181,7 @@ function Form({data , isEdit , editIndex ,onClose , toggleRefresh}) {
     if(formData.country.length>0){
         selectState()
     }
-   
+   // eslint-disable-next-line
   } , [formData.country.length])
 
   useEffect(()=> {
@@ -191,6 +191,7 @@ function Form({data , isEdit , editIndex ,onClose , toggleRefresh}) {
       if(authToken!==''){
         getCountries()
       }
+    // eslint-disable-next-line
   } , [authToken])
 
  

@@ -1,6 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Button } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import { Toolbar } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import {StyledAppBar , ButtonContainer , linkStyles } from './NavbarStyles.js'
 

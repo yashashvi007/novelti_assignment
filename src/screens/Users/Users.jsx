@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import styled from '@emotion/styled';
 import Navbar from '../../components/Navbar/Navbar';
 import UserCard from '../../components/UserCard/UserCard';
 
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import Form from '../../components/Form/Form';
 
@@ -23,12 +20,10 @@ const style = {
 
 function Users() {
   const [users , setUsers]  = useState([])
-  const [noUsers , setNoUsers] = useState('')
   const [user , setUser] = useState('')
   const [toggleRefresh ,setToggleRefresh] = useState(false)
   const [editIndex , setEditIndex] = useState(null)
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   useEffect(()=> {

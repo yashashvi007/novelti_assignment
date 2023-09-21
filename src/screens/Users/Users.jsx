@@ -56,7 +56,7 @@ function Users() {
     <>
       <Navbar/>
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px' ,justifyContent: 'center' }}>
-      {users && users.map((user , i) => (
+      {users && users?.map((user , i) => (
          <UserCard firstName={user.firstName} lastName={user.lastName} email={user.email} countryCode={user.countryCode} mobile={user.mobile} country={user.country} state={user.state} city={user.city} address1={user.address1} address2={user.address2} zipCode={user.zipCode} deleteUser={deleteUser} editUser={openEdit} i={i} />
       ))}
 
